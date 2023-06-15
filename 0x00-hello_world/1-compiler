@@ -1,0 +1,2 @@
+#!/bin/bash
+CFILE="main.c"; BASENAME="${CFILE%.*}"; OUTFILE="$BASENAME.o"; gcc -c "$CFILE" -o "$OUTFILE"
