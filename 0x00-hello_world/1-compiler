@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="main.c"; BASENAME="${CFILE%.*}"; OUTFILE="$BASENAME.o"; gcc -c "$CFILE" -o "$OUTFILE"
+export CFILE="1-main.c" && gcc -c "$CFILE" -o "${CFILE%.*}.o" && gcc "${CFILE%.*}.o" -o "1-compiler" && ./1-compiler
